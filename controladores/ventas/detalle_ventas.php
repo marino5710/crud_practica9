@@ -46,7 +46,7 @@ try {
                                 <tr>
                                     <td><?= $key + 1 ?></td>
                                     <td><?= $venta['CLIENTE_NOMBRE'] ?></td>
-                                    <td><?= $venta['VENTA_FECHA'] ?></td>
+                                    <td><?= date('d/m/Y', strtotime($venta['VENTA_FECHA'])) ?></td>
                                     <td><?= $venta ['PRODUCTO_NOMBRE'] ?></td>
                                     <td><?= $venta['PRODUCTO_PRECIO'] ?></td>
                                     <td><?= $venta['DETALLE_CANTIDAD'] ?></td>

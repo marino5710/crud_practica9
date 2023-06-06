@@ -52,7 +52,7 @@ try {
                         <?php foreach ($factura as $venta) : ?>
                             <tr>
                                 <td><strong>FECHA:</strong></td>
-                                <td><?= $venta['VENTA_FECHA'] ?></td>
+                                <td><?= date('d/m/Y', strtotime($venta['VENTA_FECHA'])) ?></td>
                             </tr>
                             <tr>
                                 <td><strong>NOMBRE:</strong></td>

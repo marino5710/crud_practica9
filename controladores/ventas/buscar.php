@@ -47,7 +47,7 @@ try {
                         <tr>
                             <td><?= $key + 1 ?></td>
                             <td><?= $venta['CLIENTE_NOMBRE'] ?></td>
-                            <td><?= $venta['VENTA_FECHA'] ?></td>
+                            <td><?= date('d/m/Y', strtotime($venta['VENTA_FECHA'])) ?></td>
                             <td><a class="btn btn-info w-100" href="/crud_practica9/vistas/ventas/factura.php?venta_id=<?php echo $venta['DETALLE_ID'] ?>">VER DETALLE</a></td>
                         </tr>
                         <?php endforeach ?>
