@@ -3,7 +3,7 @@ require '../../modelos/Cliente.php';
 try {
     $cliente = new Cliente($_GET);
     
-    $clientes = $cliente->buscar();
+    $cliente = $cliente->buscar();
     // echo "<pre>";
     // var_dump($clientes);
     // echo "</pre>";
